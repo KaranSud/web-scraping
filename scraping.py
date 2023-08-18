@@ -57,7 +57,7 @@ def main():
         if data:
             scraped_data.append(data)
     
-    with open('scraped_data.json', 'w') as outfile:
+    with open('scraped_data.txt', 'w') as outfile:
         json.dump(scraped_data, outfile, indent=4)
     
     print("Scraping completed. Data saved to 'scraped_data.json'")
